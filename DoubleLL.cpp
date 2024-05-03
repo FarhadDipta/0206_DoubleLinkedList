@@ -41,7 +41,8 @@ void addNode(){
 
         while (current != NULL && current->noMhs < newNode->noMhs) // step 1.c traverse the list to find the correct position
         {
-            previous = current; // step 11.d : move the previous to the current node
+            previous = current; // step 1.d : move the previous to the current node
+            current = current->next; // step 1.e : move the currrent to the next node
         }
     }
     
