@@ -47,6 +47,23 @@ void addNode(){
 
         newNode->next = previous; // step 4 : make the next field of the new node point to current
         newNode->prev = previous; // step 5 : make the previous field of the new node point to previous
+
+        if (current != NULL)
+        {
+            current->prev = newNode; // step 6 : make the next previous field of the current node point ti the new world
+        }
+
+        if (previous != NULL)
+        {
+            previous->next =newNode; // step 7 : make the next field of the previous node point to the new node
+        }
+        else
+        {
+            
+        }
+        
+        
+        
     }
     
 }
