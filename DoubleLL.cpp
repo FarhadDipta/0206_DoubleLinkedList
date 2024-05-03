@@ -175,7 +175,7 @@ void searchData(){
     cout << "\nEnter the roll number of the student whose record you want to ss=earch: " ;
     int num;
     cin >> num;
-    if (search(num, &prev, %curr) == false)
+    if (search(num, &prev, &curr) == false)
         cout << "\nRecod not found" << endl;
     else{
         cout << "\nRecord found" << endl;
@@ -225,7 +225,7 @@ int main(){
         }
         catch(const exception& e)
         {
-            cout << "Check for the value entered."
+            cout << "Check for the value entered." << endl;
         }
         
     }
